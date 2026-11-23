@@ -1,6 +1,9 @@
 -- Usage (Local):
 --   Run this script with: duckdb dw_marts.duckdb -c ".read build_dw_marts.sql"
 
+-- Usage (MotherDuck):
+--   Run this script with: duckdb "md:dw_marts" -c ".read build_dw_marts.sql"
+
 -- Step 1: DW - Create star schema tables
 .read 01_create_tables_dw.sql
 
